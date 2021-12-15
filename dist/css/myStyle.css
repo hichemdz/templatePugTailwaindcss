@@ -1,0 +1,184 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ----------------- START HEADER --------------------- */
+
+header nav ul li {
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.active {
+    color: #1168A1;
+}
+
+header nav span {
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+/* ----------------- START hero ---------------------- */
+.hero {
+    position: relative;
+    background: url('../img/bg2.png') center no-repeat;
+    background-size: cover;
+}
+
+.play {
+    width: 60px;
+    height: 60px;
+    left: 658px;
+    top: 457px;
+
+    background: linear-gradient(141.6deg, rgba(28, 146, 234, 0.65) 33.88%, rgba(13, 87, 132, 0.73) 97.36%);
+    backdrop-filter: blur(5px);
+}
+
+
+.c_r {
+    position: absolute;
+    width: 370px;
+    height: 370px;
+    left: -273px;
+    top: 63px;
+
+    background: linear-gradient(141.6deg, rgba(28, 146, 234, 0.03) 33.88%, rgba(13, 87, 132, 0.3) 97.36%);
+    filter: blur(5px);
+}
+
+.c_l {
+    position: absolute;
+    width: 359px;
+    height: 359px;
+    right: -273px;
+    top: 0px;
+
+    background: linear-gradient(141.6deg, rgba(28, 146, 234, 0.65) 33.88%, rgba(13, 87, 132, 0.73) 97.36%);
+    backdrop-filter: blur(5px);
+
+    /* Note: backdrop-filter has minimal browser support */
+    /* transform: rotate(45deg); */
+}
+
+
+.c_random {
+    position: absolute;
+
+    background: linear-gradient(141.6deg, rgba(28, 146, 234, 0.65) 33.88%, rgba(13, 87, 132, 0.73) 97.36%);
+    backdrop-filter: blur(5px);
+    animation: c_randomInfinity 25s infinite linear;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    transform-style: preserve-3d;
+
+    /* Note: backdrop-filter has minimal browser support */
+    /* transform: rotate(45deg); */
+}
+
+@keyframes c_randomInfinity {
+    0% {
+        transform: translateX(10px) translateY(-10px) rotateX(0);
+    }
+
+    33% {
+        transform: translateX(-10px) translateY(10px);
+    }
+
+    66% {
+        transform: translateX(20px) translateY(20px);
+    }
+
+    100% {
+        transform: translateX(-10px) translateY(10px) rotateY(180);
+    }
+}
+
+/* ----------------------------- */
+
+.card_futers h3 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.card_futers p {
+    max-width: 311px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+/*-----------------*/
+
+#app p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 29px;
+    /* or 193% */
+    text-transform: capitalize;
+    color: rgba(17, 104, 161, 0.92);
+}
+
+
+/*-------------------*/
+
+#service h3 {
+    max-width: 150px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+
+    /* or 144% */
+    text-align: center;
+
+    color: #1168A1;
+}
+
+
+
+/* ---------------------------- */
+
+#testimonail .inner_img{
+    position: absolute;
+top: -57px;
+left: 50%;
+transform: translateX(-50%);
+}
+#testimonail img {
+    width: 75px;
+    height: 75px;
+}
+
+
+/*  */
+
+
+.lk_animate_delay_1{
+    animation-delay: .1s;
+}
+
+.lk_animate_delay_2{
+    animation-delay: .2s;
+}
+
+.lk_animate_delay_3{
+    animation-delay: .3s;
+}
+
+.lk_animate_delay_4{
+    animation-delay: .4s;
+}
